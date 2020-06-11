@@ -1,8 +1,5 @@
 html{
     border-top: 10px solid #1E9E9E;
-    border-top-right-radius: 20%;
-    border-bottom: 10px solid #1E9E9E;
-    border-bottom-left-radius: 20%;
     margin: 0 auto;
     justify-content: center;
     max-width: 768px;
