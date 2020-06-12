@@ -97,8 +97,8 @@ a {
     background-color: #24bfc2;
     border-radius: 85px;
     background: linear-gradient(145deg, #20acaf, #27ccd0);
-    box-shadow:  5px 5px 13px #1d8081, 
-                 -5px -5px 13px #29bbbb;
+    box-shadow:  5px 5px 8px #105455, 
+                 -5px -5px 8px #ffffff;
     transition: 0.5s;
 }
 
