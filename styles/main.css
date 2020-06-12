@@ -94,9 +94,11 @@ a {
     color: #fff;
     font-size: 20px;
     line-height: 65px;
-    background-color: #24cfaa;
-    box-shadow: 3px 3px 8px #b1b1b1,
-                -3px -3px 8px #ffffff;
+    background-color: #24bfc2;
+    border-radius: 85px;
+    background: linear-gradient(145deg, #20acaf, #27ccd0);
+    box-shadow:  5px 5px 13px #1d8081, 
+                 -5px -5px 13px #29bbbb;
     transition: 0.5s;
 }
 
