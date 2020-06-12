@@ -103,12 +103,13 @@ a {
 }
 
 .picknumber:hover{
-    background: #2fdbb6;
+    background: #1e9092;
 }
 
 .picknumber:active{
-    background: #1da88a;
+    background: #125758;
 }
+
 
 
 .contents_blank{
