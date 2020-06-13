@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <div class = "recent_result" id = "drawNo"></div><span class = "draw">회차 당첨번호</span>
+    <div class = "recent_result"><span class = "drawNo" id = "drawNo"></span></div>
     <div class = "recent_detail">
         <p>
             <span class="recent_winning" id = "text1">-</span>
@@ -50,7 +50,7 @@
                 $("#text5").html(winningNum.drwt5);
                 $("#text6").html(winningNum.drwt6);
                 $("#text8").html(winningNum.bnusNo);
-                $("#drawNo").html(winningNum.drwNo);
+                $("#drawNo").html(winningNum.drwNo+'회차 당첨번호');
             });
             </script>
         <p>
