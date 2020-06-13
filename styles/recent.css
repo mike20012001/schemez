@@ -37,6 +37,10 @@ a {
                 -13px -13px 20px #ffffff;
 }
 
+.recent_winning_det{
+    line-height: 3em;
+}
+
 .store{
     margin-top: 30px;
     margin-bottom: 10px;
