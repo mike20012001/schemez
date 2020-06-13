@@ -31,7 +31,7 @@
                 return Math.floor(dff/7)+1;
             }
             $.getJSON('https://cors-anywhere.herokuapp.com/https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo='+getWeek(), function(data) {
-                  
+
                 var winningNum = {
                     drwt1: data.drwtNo1,
                     drwt2: data.drwtNo2,
@@ -40,9 +40,15 @@
                     drwt5: data.drwtNo5,
                     drwt6: data.drwtNo6,
                     drwNo: data.drwNo,
-                    bnusNo:data.bnusNo
+                    bnusNo: data.bnusNo,
+                    firstPrzwnerCo: data.firstPrzwnerCo,
+                    firstWinamnt: data.firstWinamnt
                 }
-            
+                function addComma(num) {
+                    var regexp = /\B(?=(\d{3})+(?!\d))/g;
+                    return num.toString().replace(regexp, ',');
+                }
+  
                 $("#text1").html(winningNum.drwt1);
                 $("#text2").html(winningNum.drwt2);
                 $("#text3").html(winningNum.drwt3);
@@ -51,10 +57,12 @@
                 $("#text6").html(winningNum.drwt6);
                 $("#text8").html(winningNum.bnusNo);
                 $("#drawNo").html(winningNum.drwNo+'회차 당첨번호');
+                $(".recent_winning_det").html('1등 총 '+winningNum.firstPrzwnerCo+'명, 각 '+ addComma(winningNum.firstWinamnt)+'원');
+
             });
             </script>
         <p>
-            <span class="recent_winning_det">1등 총 11명, 1인당 약 20억</span>
+            <span class="recent_winning_det">정보를 불러 오고 있습니다.</span>
         </p>
     </div>
     <div class = "store">1등 당첨번호 판매점</div>
