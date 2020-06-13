@@ -23,7 +23,7 @@
             <span class="recent_winning" id = "text8">-</span>
         </p>
        <script>
-            $.getJSON('https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=900', function(data) {
+            $.getJSON('https://cors-anywhere.herokuapp.com/https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=900', function(data) {
                 
                 var winningNum = {
                     drwt1: data.drwtNo1,
