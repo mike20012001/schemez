@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>로또번호 추천</title>
     <link rel="stylesheet" href="/styles/recent.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/scripts/moment.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/2021919c94.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
@@ -23,8 +24,14 @@
             <span class="recent_winning" id = "text8">-</span>
         </p>
        <script>
-            $.getJSON('https://cors-anywhere.herokuapp.com/https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=915', function(data) {
-                
+            getWeek = () => {
+                let t1 = moment('20021207');
+                let t2 = moment();
+                let dff = moment.duration(t2.diff(t1)).asDays();
+                return Math.floor(dff/7)+1;
+            }
+            $.getJSON('https://cors-anywhere.herokuapp.com/https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo='+week(), function(data) {
+                  
                 var winningNum = {
                     drwt1: data.drwtNo1,
                     drwt2: data.drwtNo2,
