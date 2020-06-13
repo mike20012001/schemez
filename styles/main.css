@@ -43,14 +43,14 @@ a {
     border-radius: 13px 13px 0 0;
     margin-bottom: 0px;
     margin-top: -10px;
-    font-size: 20px;
+    font-size: 16px;
  /*   color: white; */
     font-weight: bolder;
     text-align: center;
 }
 
 ::placeholder{
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(151, 144, 144);
 }
 
@@ -90,15 +90,14 @@ a {
 .picknumber{
     width: 70px;
     height: 63px;
-    border-radius: 34px;
+    border-radius: 22px;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 65px;
     background-color: #24bfc2;
-    border-radius: 85px;
     background: linear-gradient(145deg, #20acaf, #27ccd0);
     box-shadow:  5px 5px 8px #105455, 
-                 -5px -5px 8px #ffffff;
+                -5px -5px 8px #ffffff;
     transition: 0.5s;
 }
 
@@ -109,7 +108,6 @@ a {
 .picknumber:active{
     background: #125758;
 }
-
 
 
 .contents_blank{
@@ -125,8 +123,8 @@ a {
 }
 
 .recmdtable{
-    font-size: 20px;
-    color: #1e9e9e;
+    font-size: 16px;
+    color: #000000;
     margin-bottom: 10px;
 }
 

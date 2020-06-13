@@ -1,0 +1,126 @@
+html{
+    border-top: 10px solid #1E9E9E;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 768px;
+    min-width: 360px;
+    background-color: #F2EEEE;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.lucky_day{
+    text-align: center;
+}
+
+.mainMenu{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 7rem;
+    height: 50%;
+    width: 85%;
+
+}
+
+.recent_result{
+    position: fixed;
+    max-width: 345px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 10px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    font-weight: bolder;
+    letter-spacing: 0.5em;
+    color: black;
+    height: 35%;
+    width: 15%;
+    border-radius: 37px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  11px 11px 17px #666666, 
+                 -11px -11px 17px #ffffff;
+}
+
+.statis{
+    position: fixed;
+    max-width: 499px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 10px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    font-weight: bolder;
+    letter-spacing: 0.5em;
+    color: black;
+    height: 35%;
+    width: 25%;
+    border-radius: 37px;
+    background: linear-gradient(145deg, #90f2f8, #7acbd1);
+    box-shadow:  11px 11px 17px #365a5d, 
+                 -11px -11px 17px #d8ffff;
+}
+
+.auto_gen{
+    position: fixed;
+    max-width: 632px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 10px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    font-weight: bolder;
+    letter-spacing: 0.5em;
+    color: black;
+    height: 35%;
+    width: 35%;
+    border-radius: 37px;
+    background: linear-gradient(145deg, #4ce6f1, #40c2cb);
+    box-shadow:  11px 11px 17px #1c565a, 
+                 -11px -11px 17px #72ffff;
+}
+
+.manual_gen{
+    position: fixed;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 10px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    font-weight: bolder;
+    letter-spacing: 0.5em;
+    color: black;
+    height: 35%;
+    width: 55%;
+    border-radius: 37px;
+    background: linear-gradient(145deg, #1da8b3, #188d96);
+    box-shadow:  11px 11px 17px #0b3f43, 
+                 -11px -11px 17px #2bfbff;
+
+
+.desc1,
+.desc2 {
+    font-size: 24px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.33px;
+    margin-top: 20px;
+}
+
+.desc1{
+    margin-top: 20px;
+    margin-right: 10%;
+    text-align: right;
+    font-weight: normal;
+}
+
+
+.desc2{
+    margin-top: 0;
+    margin-right: 10%;
+    font-size: 16px;
+    text-align: right;
+    font-weight: lighter;
+    color: #80799C;
+}
+
