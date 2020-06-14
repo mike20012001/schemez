@@ -1,0 +1,109 @@
+html{
+    border-top: 10px solid #1E9E9E;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 768px;
+    min-width: 360px;
+    background-color: F2EEEE;
+}
+body{
+    display: block;
+    font-family:BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.lucky_day{
+    font-family: inherit;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.33px;
+    margin-top: 40px;
+}
+
+.drawing {
+    position: relative;
+    left: 55%;
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+.conf {
+    position: relative;
+    left: 15%;
+    width: 250px;
+    height: 206px;
+    margin: -60 auto;
+}
+
+.pick,
+.howto {
+    font-family: inherit;
+    font-size: 32px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.33px;
+    margin-top: 83px;
+}
+
+.pick{
+    margin-top: 100px;
+    margin-right: 10%;
+    text-align: right;
+    font-weight: normal;
+}
+
+
+.howto{
+    margin-top: 0;
+    margin-right: 10%;
+    font-size: 20px;
+    text-align: right;
+    font-weight: lighter;
+    color: 80799C;
+}
+
+.breakline{
+    border: 1px solid lightgrey;
+    margin-top: 30px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    html{
+        border-top: 20px solid #1E9E9E;
+        border-top-right-radius: 20%;
+        border-bottom: 20px solid #1E9E9E;
+        border-bottom-left-radius: 20%;
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 768px;
+        min-width: 360px;
+        background-color: F2EEEE;
+    }
+
+    .pick{
+        margin-top: 180px;
+
+    }
+    
+    
+    .howto{
+        margin-top: 0;
+        margin-right: 10%;
+        font-size: 24px;
+        text-align: right;
+        font-weight: lighter;
+        color: 80799C;
+        line-height: 1.5em;
+    }
+    
+    
+}

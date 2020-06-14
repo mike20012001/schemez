@@ -17,7 +17,7 @@
         <div class="form_">
             <div class="birthfav">생일 / 숫자 입력</div>
             <div class="inputs"><input type="inputs" class="user_inputs" placeholder="숫자입력" maxlength="6" oninput="numberMaxLength(this);"/></div>
-            <div class="picknumber" onclick="numGen()">실행</div>
+            <div class="picknumber" onclick="numGen()">▶︎</div>
         </div>
     <p class="disc">
         유저로부터 입력받은 어떠한 정보도 저장되지 않습니다.
@@ -25,18 +25,52 @@
     <div class="contents_blank"></div>
     <div class="recmdtable">추천번호</div>
     <div class="no_table">
-        <div class="fst_no">
-                <span class="balls" id="fst_text"></span>
-                <span class="balls" id="fst_text1"></span>
-                <span class="balls" id="fst_text2"></span>
-                <span class="balls" id="fst_text3"></span>
-                <span class="balls" id="fst_text4"></span>
-                <span class="balls" id="fst_text5"></span>
+        <div class="ball_tables">
+                <span class="balls" id="fst_text">-</span>
+                <span class="balls" id="fst_text1">-</span>
+                <span class="balls" id="fst_text2">-</span>
+                <span class="balls" id="fst_text3">-</span>
+                <span class="balls" id="fst_text4">-</span>
+                <span class="balls" id="fst_text5">-</span>
+                <span class="picknumber" onclick="numGen()">▶︎</span>
+
         </div>
-        <div class="snd_no"></div>
-        <div class="trd_no"></div>
-        <div class="fth_no"></div>
-        <div class="fft_no"></div>
+        <div class="ball_tables">
+            <span class="balls" id="snd_text">-</span>
+            <span class="balls" id="snd_text1">-</span>
+            <span class="balls" id="snd_text2">-</span>
+            <span class="balls" id="snd_text3">-</span>
+            <span class="balls" id="snd_text4">-</span>
+            <span class="balls" id="snd_text5">-</span>
+            <span class="picknumber" onclick="numGen2()">▶︎</span>
+        </div>
+        <div class="ball_tables">
+            <span class="balls" id="trd_text">-</span>
+            <span class="balls" id="trd_text1">-</span>
+            <span class="balls" id="trd_text2">-</span>
+            <span class="balls" id="trd_text3">-</span>
+            <span class="balls" id="trd_text4">-</span>
+            <span class="balls" id="trd_text5">-</span>
+            <span class="picknumber" onclick="numGen3()">▶︎</span>
+            </div>
+        <div class="ball_tables">
+            <span class="balls" id="fth_text">-</span>
+            <span class="balls" id="fth_text1">-</span>
+            <span class="balls" id="fth_text2">-</span>
+            <span class="balls" id="fth_text3">-</span>
+            <span class="balls" id="fth_text4">-</span>
+            <span class="balls" id="fth_text5">-</span>
+            <span class="picknumber" onclick="numGen4()">▶︎</span>
+            </div>
+        <div class="ball_tables">
+            <span class="balls" id="fft_text">-</span>
+            <span class="balls" id="fft_text1">-</span>
+            <span class="balls" id="fft_text2">-</span>
+            <span class="balls" id="fft_text3">-</span>
+            <span class="balls" id="fft_text4">-</span>
+            <span class="balls" id="fft_text5">-</span>
+            <span class="picknumber" onclick="numGen5()">▶︎</span>
+            </div>
     </div>
     <div class = "menu">
         <a href="recent.html"><i class="fas fa-home"></i></a>

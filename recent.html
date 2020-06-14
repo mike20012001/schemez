@@ -2,7 +2,7 @@
     <html lang="ko">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>추천 로또번호</title>
+    <title>로또번호 추천</title>
     <link rel="stylesheet" href="/styles/recent.css">
     <script src="/scripts/moment.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -23,7 +23,7 @@
             <span class="recent_winning" id = "text7">+</span>
             <span class="recent_winning" id = "text8">-</span>
         </p>
-       <script>
+        <script>
             getWeek = () => {
                 let t1 = moment('20021207');
                 let t2 = moment();
@@ -48,7 +48,7 @@
                     var regexp = /\B(?=(\d{3})+(?!\d))/g;
                     return num.toString().replace(regexp, ',');
                 }
-  
+
                 $("#text1").html(winningNum.drwt1);
                 $("#text2").html(winningNum.drwt2);
                 $("#text3").html(winningNum.drwt3);
@@ -65,7 +65,7 @@
             <span class="recent_winning_det">정보를 불러 오고 있습니다.</span>
         </p>
     </div>
-    <div class = "store">1등 당첨번호 판매점</div>
+    <div class = "store"> 판매점</div>
     <div class = "store_address"></div>
     <div class = "menu">
         <a href="recent.html"><i class="fas fa-home"></i></a>
