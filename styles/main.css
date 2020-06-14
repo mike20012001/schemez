@@ -102,7 +102,7 @@ a {
 .form_ input{
     border: none;
     outline: none;
-    width: 100px;
+    width: 60px;
     background: none;
     font-size: 20px;
     text-align: center;;
@@ -112,7 +112,7 @@ a {
 
 .inputs {
     border-radius: 25px;
-    width: 100px;
+    width: 60px;
     box-shadow: inset 1px 1px 3px #cbced1,
                 inset -1px -1px 10px #ffffff;
 }
