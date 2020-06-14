@@ -1,5 +1,3 @@
-
-
 let numGen = function(){
 
     var fstNo = document.getElementById('fst_text');
