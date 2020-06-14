@@ -1,0 +1,166 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+html{
+    border-top: 10px solid #1E9E9E;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 768px;
+    min-width: 360px;
+    background-color: #F2EEEE;
+}
+
+.picks{
+    margin-top: 15px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+a {
+    font-size: 24px;
+    color: #1e9e9e;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.birthfav{
+    width: 100%;
+    height: 30px;
+    letter-spacing: 0.2em;
+    color: #808080;
+    font-size: 16px;
+ /*   color: white; */
+    font-weight: bolder;
+    text-align: center;
+}
+
+::placeholder{
+    font-size: 16px;
+    color: rgb(151, 144, 144);
+}
+
+.form_{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 128px;
+    border-radius: 28px;
+    text-align: center;
+    align-items: center; 
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
+}
+
+.form_ input{
+    border: none;
+    outline: none;
+    width: 70%;
+    background: none;
+    font-size: 20px;
+    text-align: center;;
+    letter-spacing: 0.5rem;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+}
+
+.inputs {
+    border-radius: 25px;
+    width: 70%;
+    box-shadow: inset 1px 1px 3px #cbced1,
+                inset -1px -1px 10px #ffffff;
+}
+
+.picknumber{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    color: red;
+    font-size: 24px;
+    text-align: center;
+    line-height: 35px;
+    background-color:transparent;
+    box-shadow: 1px 1px 1px #000000,
+                -3px -3px 10px #ffffff;   
+    transition: 0.5s;
+}
+
+.picknumber:hover{
+    background: #1e9092;
+    background-color:transparent;
+    box-shadow: -1px -1px 1px #000000,
+                3px 3px 10px #ffffff;   
+}
+
+.picknumber:active{
+    background: #125758;
+}
+
+
+.contents_blank{
+    height: 10px;
+
+}
+.disc{
+    color: grey;
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+.recmdtable{
+    font-size: 16px;
+    color: #808080;
+    margin-bottom: 10px;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.no_table{
+    width: 95%;
+    height: 30%;
+    padding: 15px 0 15px 0;
+    border-radius: 28px;
+    font-size: 20px;
+    line-height: 2em;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
+}
+
+.ball_tables{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    justify-content: space-evenly;
+}
+
+.balls{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 36px;
+    color: gray;
+    background:transparent;
+    transition: 0.5s;
+    box-shadow: 1px 1px 1px #000000,
+                -3px -3px 10px #ffffff;    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    bottom: 30px;
+    max-width: 768px; 
+}
+
