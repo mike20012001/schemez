@@ -117,6 +117,29 @@ a {
                 inset -1px -1px 10px #ffffff;
 }
 
+.button{
+    width: 80px;
+    height: 80px;
+    color: #28818d;
+    font-size: 18px;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #ffffff, #dad6d6);
+    box-shadow:  14px 14px 28px #cecaca, 
+                 -14px -14px 28px #ffffff;
+}
+
+
+.button:active{
+    background: lightgray;
+    background-color:transparent;
+    color: red;
+    background: linear-gradient(145deg, #dad6d6, #ffffff);
+    box-shadow:  14px 14px 28px #cecaca, 
+                 -14px -14px 28px #ffffff;
+}
+
 .picknumber{
     width: 35px;
     height: 35px;
