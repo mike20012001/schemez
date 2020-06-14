@@ -131,6 +131,16 @@ a {
 }
 
 
+.button:hover{
+    background: lightgray;
+    background-color:transparent;
+    color: red;
+    background: linear-gradient(145deg, #dad6d6, #ffffff);
+    box-shadow:  14px 14px 28px #cecaca, 
+                 -14px -14px 28px #ffffff;
+}
+
+
 .button:active{
     background: lightgray;
     background-color:transparent;
