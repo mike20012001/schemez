@@ -218,7 +218,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 99%;
-    height: 128px;
+    height: auto;
     border-radius: 28px;
     text-align: center;
     align-items: center; 
