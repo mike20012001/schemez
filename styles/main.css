@@ -28,21 +28,10 @@ a {
 
 
 .birthfav{
-    align-self: center;
-    width: 300px;
+    width: 100%;
     height: 30px;
- 
-    background-color: black;
     letter-spacing: 0.2em;
-    color: transparent;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-            background-clip: text;
-
-    border-radius: 13px 13px 0 0;
-    margin-bottom: 0px;
-    margin-top: -10px;
+    color: #808080;
     font-size: 16px;
  /*   color: white; */
     font-weight: bolder;
@@ -60,7 +49,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 95%;
-    height: 188px;
+    height: 128px;
     border-radius: 28px;
     text-align: center;
     align-items: center; 
@@ -129,6 +118,7 @@ a {
     font-size: 16px;
     color: #808080;
     margin-bottom: 10px;
+    letter-spacing: 0.2em;
     text-align: center;
 }
 
