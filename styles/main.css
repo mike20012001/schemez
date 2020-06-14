@@ -83,26 +83,29 @@ a {
 .inputs {
     border-radius: 25px;
     width: 70%;
-    box-shadow: inset 8px 8px 8px #cbced1,
-                inset -8px -8px 8px #ffffff;
+    box-shadow: inset 1px 1px 3px #cbced1,
+                inset -1px -1px 10px #ffffff;
 }
 
 .picknumber{
-    width: 70px;
-    height: 63px;
-    border-radius: 22px;
-    color: #fff;
-    font-size: 16px;
-    line-height: 65px;
-    background-color: #24bfc2;
-    background: linear-gradient(145deg, #20acaf, #27ccd0);
-    box-shadow:  5px 5px 8px #105455, 
-                -5px -5px 8px #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    color: red;
+    font-size: 24px;
+    text-align: center;
+    line-height: 35px;
+    background-color:transparent;
+    box-shadow: 1px 1px 1px #000000,
+                -3px -3px 10px #ffffff;   
     transition: 0.5s;
 }
 
 .picknumber:hover{
     background: #1e9092;
+    background-color:transparent;
+    box-shadow: -1px -1px 1px #000000,
+                3px 3px 10px #ffffff;   
 }
 
 .picknumber:active{
@@ -124,14 +127,15 @@ a {
 
 .recmdtable{
     font-size: 16px;
-    color: #000000;
+    color: #808080;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .no_table{
     width: 95%;
     height: 30%;
-    padding: 15px 0 15 0;
+    padding: 15px 0 15px 0;
     border-radius: 28px;
     font-size: 20px;
     line-height: 2em;
@@ -139,117 +143,26 @@ a {
                 -13px -13px 20px #ffffff;
 }
 
-.fst_no{
+.ball_tables{
     display: flex;
     height: 40px;
     width: 100%;
-    font: inherit;
-    font-size: 24px;
+    font-size: 20px;
     justify-content: space-evenly;
 }
 
-#fst_text{
+.balls{
     border-radius: 50%;
     height: 35px;
     width: 35px;
     text-align: center;
-    line-height: 32px;
-    color: #ffffff;
-    background:#ff7272;
-    text-shadow: 0px 0px 3px rgba(64, 0, 0, .8);
+    line-height: 36px;
+    color: gray;
+    background:transparent;
     transition: 0.5s;
-    box-shadow: 3px 3px 8px #ffffff,
-                -3px -3px 8px #000000;
+    box-shadow: 1px 1px 1px #000000,
+                -3px -3px 10px #ffffff;    
 }
-
-#fst_text1{
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    line-height: 32px;
-    color: #ffffff;
-    background:#ff7272; 
-    text-shadow: 0px 0px 3px rgba(64, 0, 0, .8);
-    transition: 0.5s;
-    box-shadow: 3px 3px 8px #ffffff,
-                -3px -3px 8px #000000;
-}
-
-#fst_text2{
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    line-height: 32px;
-    color: #ffffff;
-    background:#ff7272; 
-    text-shadow: 0px 0px 3px rgba(64, 0, 0, .8);
-    transition: 0.5s;
-    box-shadow: 3px 3px 8px #ffffff,
-                -3px -3px 8px #000000;
-}
-
-#fst_text3{
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    line-height: 32px;
-    color: #ffffff;
-    background:#ff7272; 
-    text-shadow: 0px 0px 3px rgba(64, 0, 0, .8);
-    transition: 0.5s;
-    box-shadow: 3px 3px 8px #ffffff,
-                -3px -3px 8px #000000;
-}
-
-#fst_text4{
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    line-height: 32px;
-    color: #ffffff;
-    background:#ff7272; 
-    text-shadow: 0px 0px 3px rgba(64, 0, 0, .8);
-    transition: 0.5s;
-    box-shadow: 3px 3px 8px #ffffff,
-                -3px -3px 8px #000000;
-}
-
-#fst_text5{
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    line-height: 32px;
-    color: #ffffff;
-    background:#ff7272; 
-    text-shadow: 0px 0px 3px rgba(64, 0, 0, .8);
-    transition: 0.5s;
-    box-shadow: 3px 3px 8px #ffffff,
-                -3px -3px 8px #000000;
-}
-
-
-.snd_no{
-
-
-}
-.trd_no{
-
-
-}
-.fth_no{
-
-
-}
-.fft_no{
-
-
-}
-
 
 .menu{
     display: flex;
