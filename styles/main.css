@@ -85,20 +85,21 @@ a {
     text-align: center;
     line-height: 35px;
     background-color:transparent;
-    box-shadow: 1px 1px 1px #000000,
-                -3px -3px 10px #ffffff;   
+    box-shadow: 1px 1px 3px #000000,
+                3px -3px 10px #ffffff;   
     transition: 0.5s;
 }
 
 .picknumber:hover{
-    background: #1e9092;
-    background-color:transparent;
-    box-shadow: -1px -1px 1px #000000,
-                3px 3px 10px #ffffff;   
+    background: transparent;
+ 
 }
 
 .picknumber:active{
-    background: #125758;
+    background: lightgray;
+    background-color:transparent;
+    box-shadow: inset -1px -1px 1px #969696,
+                inset 3px 3px 10px #ffffff;  
 }
 
 
@@ -151,7 +152,7 @@ a {
     background:transparent;
     transition: 0.5s;
     box-shadow: 1px 1px 1px #000000,
-                -3px -3px 10px #ffffff;    
+                -3px -3px 10px #ffffff; 
 }
 
 .menu{
