@@ -109,7 +109,7 @@ input[type="checkbox"] {
 	top: calc(var(--checkbox-size) * -0.25);
 	width: calc(var(--checkbox-size) * 0.25);
     height: calc(var(--checkbox-size) * 0.75);
-    margin-top: -1em;
+    margin-top: -1.5em;
 	border-right: calc(var(--checkbox-size) * 0.25) solid var(--tick-color);
 	border-bottom: calc(var(--checkbox-size) * 0.25) solid var(--tick-color);
 	-webkit-transform: rotate(45deg) scale(0);
