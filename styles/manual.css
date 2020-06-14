@@ -82,9 +82,10 @@ html{
 
 label {
 	display: inline-block;
-    margin: 0 calc(var(--checkbox-size) * 0.3);
+  	margin: 0 calc(var(--checkbox-size) * 0.3);
 	width: var(--checkbox-size);
 	height: var(--checkbox-size);
+	margin-top: 1em;
 	border: calc(var(--checkbox-size) * 0.025) solid var(--checkbox-color);
 	border-radius: 30.5%;
 	-webkit-transition: 400ms 100ms ease-out;
