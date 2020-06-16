@@ -1,4 +1,38 @@
-let numGen = function(){
+
+let numGen = function(){ 
+
+    /* 각 입력숫자를 받아 배열에 추가하는 함수를 숫자만 받는 부분만 실행 
+       function input_get(){ */
+        let inputResult = [];
+        let inputGet = document.querySelector('#input_get')
+        let inputGet2 = document.querySelector('#input_get2')
+        let inputGet3 = document.querySelector('#input_get3')
+
+    let list = [];
+
+    for (var i = 1; i <= 45; i++) {
+        list.push(i);
+    }
+    if (isNaN(inputGet.value) || inputGet.value == 0 || inputGet.value > 45){
+        inputGet.value = null
+    } else {
+        inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
+
+    };
+    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
+        inputGet2.value = null
+    } else {
+        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-1, 1)
+
+    };
+    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
+        inputGet3.value = null
+    } else {
+        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-1, 1)
+    };
+
+    
+/* 추천번호 1번라인 숫자 */
 
     var fstNo = document.getElementById('fst_text');
     var fstNo1 = document.getElementById('fst_text1');
@@ -7,32 +41,25 @@ let numGen = function(){
     var fstNo4 = document.getElementById('fst_text4');
     var fstNo5 = document.getElementById('fst_text5');
 
-    var list = [];
-    var result = [];
+    var result = inputResult; 
 
-    for (var i = 1; i <= 45; i++) {
-        list.push(i);
-    }
+    result.sort(function(a,b){
+        return a-b;
+    });
+    
 
-    for (var af = 1; af <= 6; af++) {
+    /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
+
+    while (result.length <= 5){
         var index = Math.floor(Math.random() * list.length);
+        if (result.includes(index)){
+            continue;
+        }
         var num = list[index];
         list.splice(index, 1);
         result.push(num);
-    }
-
-    function compare(a, b) {
-        if (a<b){
-            return -1;
-            }
-
-        if (a>b){
-            return 1;
-            }
-        if (a==b){
-            return 0;
-            }
         }
+    
 
     result.sort(function(a,b){
         return a-b;
@@ -53,9 +80,44 @@ let numGen = function(){
             fstNo5.innerHTML = result[i]
         }
     }
+
 }    
 
-let numGen2 = function(){
+
+let numGen2 = function(){ 
+
+    /* 각 입력숫자를 받아 배열에 추가하는 함수를 숫자만 받는 부분만 실행 
+       function input_get(){ */
+        let inputResult = [];
+        let inputGet = document.querySelector('#input_get')
+        let inputGet2 = document.querySelector('#input_get2')
+        let inputGet3 = document.querySelector('#input_get3')
+
+    let list = [];
+
+    for (var i = 1; i <= 45; i++) {
+        list.push(i);
+    }
+    if (isNaN(inputGet.value) || inputGet.value == 0 || inputGet.value > 45){
+        inputGet.value = null
+    } else {
+        inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
+
+    };
+    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
+        inputGet2.value = null
+    } else {
+        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-1, 1)
+
+    };
+    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
+        inputGet3.value = null
+    } else {
+        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-1, 1)
+    };
+
+    
+/* 추천번호 1번라인 숫자 */
 
     var sndNo = document.getElementById('snd_text');
     var sndNo1 = document.getElementById('snd_text1');
@@ -64,32 +126,25 @@ let numGen2 = function(){
     var sndNo4 = document.getElementById('snd_text4');
     var sndNo5 = document.getElementById('snd_text5');
 
-    var list = [];
-    var result = [];
+    var result = inputResult; 
 
-    for (var i = 1; i <= 45; i++) {
-        list.push(i);
-    }
+    result.sort(function(a,b){
+        return a-b;
+    });
+    
 
-    for (var af = 1; af <= 6; af++) {
+    /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
+
+    while (result.length <= 5){
         var index = Math.floor(Math.random() * list.length);
+        if (result.includes(index)){
+            continue;
+        }
         var num = list[index];
         list.splice(index, 1);
         result.push(num);
-    }
-
-    function compare(a, b) {
-        if (a<b){
-            return -1;
-            }
-
-        if (a>b){
-            return 1;
-            }
-        if (a==b){
-            return 0;
-            }
         }
+    
 
     result.sort(function(a,b){
         return a-b;
@@ -110,9 +165,43 @@ let numGen2 = function(){
             sndNo5.innerHTML = result[i]
         }
     }
-}    
+    
+}
 
-let numGen3 = function(){
+let numGen3 = function(){ 
+
+    /* 각 입력숫자를 받아 배열에 추가하는 함수를 숫자만 받는 부분만 실행 
+       function input_get(){ */
+        let inputResult = [];
+        let inputGet = document.querySelector('#input_get')
+        let inputGet2 = document.querySelector('#input_get2')
+        let inputGet3 = document.querySelector('#input_get3')
+
+    let list = [];
+
+    for (var i = 1; i <= 45; i++) {
+        list.push(i);
+    }
+    if (isNaN(inputGet.value) || inputGet.value == 0 || inputGet.value > 45){
+        inputGet.value = null
+    } else {
+        inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
+
+    };
+    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
+        inputGet2.value = null
+    } else {
+        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-1, 1)
+
+    };
+    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
+        inputGet3.value = null
+    } else {
+        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-1, 1)
+    };
+
+    
+/* 추천번호 1번라인 숫자 */
 
     var trdNo = document.getElementById('trd_text');
     var trdNo1 = document.getElementById('trd_text1');
@@ -121,32 +210,25 @@ let numGen3 = function(){
     var trdNo4 = document.getElementById('trd_text4');
     var trdNo5 = document.getElementById('trd_text5');
 
-    var list = [];
-    var result = [];
+    var result = inputResult; 
 
-    for (var i = 1; i <= 45; i++) {
-        list.push(i);
-    }
+    result.sort(function(a,b){
+        return a-b;
+    });
+    
 
-    for (var af = 1; af <= 6; af++) {
+    /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
+
+    while (result.length <= 5){
         var index = Math.floor(Math.random() * list.length);
+        if (result.includes(index)){
+            continue;
+        }
         var num = list[index];
         list.splice(index, 1);
         result.push(num);
-    }
-
-    function compare(a, b) {
-        if (a<b){
-            return -1;
-            }
-
-        if (a>b){
-            return 1;
-            }
-        if (a==b){
-            return 0;
-            }
         }
+    
 
     result.sort(function(a,b){
         return a-b;
@@ -167,9 +249,43 @@ let numGen3 = function(){
             trdNo5.innerHTML = result[i]
         }
     }
-}    
+}
 
-let numGen4 = function(){
+
+let numGen4 = function(){ 
+
+    /* 각 입력숫자를 받아 배열에 추가하는 함수를 숫자만 받는 부분만 실행 
+       function input_get(){ */
+        let inputResult = [];
+        let inputGet = document.querySelector('#input_get')
+        let inputGet2 = document.querySelector('#input_get2')
+        let inputGet3 = document.querySelector('#input_get3')
+
+    let list = [];
+
+    for (var i = 1; i <= 45; i++) {
+        list.push(i);
+    }
+    if (isNaN(inputGet.value) || inputGet.value == 0 || inputGet.value > 45){
+        inputGet.value = null
+    } else {
+        inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
+
+    };
+    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
+        inputGet2.value = null
+    } else {
+        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-1, 1)
+
+    };
+    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
+        inputGet3.value = null
+    } else {
+        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-1, 1)
+    };
+
+    
+/* 추천번호 1번라인 숫자 */
 
     var fthNo = document.getElementById('fth_text');
     var fthNo1 = document.getElementById('fth_text1');
@@ -178,32 +294,25 @@ let numGen4 = function(){
     var fthNo4 = document.getElementById('fth_text4');
     var fthNo5 = document.getElementById('fth_text5');
 
-    var list = [];
-    var result = [];
+    var result = inputResult; 
 
-    for (var i = 1; i <= 45; i++) {
-        list.push(i);
-    }
+    result.sort(function(a,b){
+        return a-b;
+    });
+    
 
-    for (var af = 1; af <= 6; af++) {
+    /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
+
+    while (result.length <= 5){
         var index = Math.floor(Math.random() * list.length);
+        if (result.includes(index)){
+            continue;
+        }
         var num = list[index];
         list.splice(index, 1);
         result.push(num);
-    }
-
-    function compare(a, b) {
-        if (a<b){
-            return -1;
-            }
-
-        if (a>b){
-            return 1;
-            }
-        if (a==b){
-            return 0;
-            }
         }
+    
 
     result.sort(function(a,b){
         return a-b;
@@ -224,9 +333,42 @@ let numGen4 = function(){
             fthNo5.innerHTML = result[i]
         }
     }
-}    
+}
 
-let numGen5 = function(){
+let numGen5 = function(){ 
+
+    /* 각 입력숫자를 받아 배열에 추가하는 함수를 숫자만 받는 부분만 실행 
+       function input_get(){ */
+        let inputResult = [];
+        let inputGet = document.querySelector('#input_get')
+        let inputGet2 = document.querySelector('#input_get2')
+        let inputGet3 = document.querySelector('#input_get3')
+
+    let list = [];
+
+    for (var i = 1; i <= 45; i++) {
+        list.push(i);
+    }
+    if (isNaN(inputGet.value) || inputGet.value == 0 || inputGet.value > 45){
+        inputGet.value = null
+    } else {
+        inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
+
+    };
+    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
+        inputGet2.value = null
+    } else {
+        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-1, 1)
+
+    };
+    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
+        inputGet3.value = null
+    } else {
+        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-1, 1)
+    };
+
+    
+/* 추천번호 1번라인 숫자 */
 
     var fftNo = document.getElementById('fft_text');
     var fftNo1 = document.getElementById('fft_text1');
@@ -235,32 +377,25 @@ let numGen5 = function(){
     var fftNo4 = document.getElementById('fft_text4');
     var fftNo5 = document.getElementById('fft_text5');
 
-    var list = [];
-    var result = [];
+    var result = inputResult; 
 
-    for (var i = 1; i <= 45; i++) {
-        list.push(i);
-    }
+    result.sort(function(a,b){
+        return a-b;
+    });
+    
 
-    for (var af = 1; af <= 6; af++) {
+    /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
+
+    while (result.length <= 5){
         var index = Math.floor(Math.random() * list.length);
+        if (result.includes(index)){
+            continue;
+        }
         var num = list[index];
         list.splice(index, 1);
         result.push(num);
-    }
-
-    function compare(a, b) {
-        if (a<b){
-            return -1;
-            }
-
-        if (a>b){
-            return 1;
-            }
-        if (a==b){
-            return 0;
-            }
         }
+    
 
     result.sort(function(a,b){
         return a-b;
@@ -281,4 +416,4 @@ let numGen5 = function(){
             fftNo5.innerHTML = result[i]
         }
     }
-}    
+}
