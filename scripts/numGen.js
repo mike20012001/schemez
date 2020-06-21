@@ -19,13 +19,13 @@ let numGen = function(){
         inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
     };
 
-    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
+    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45 || inputGet2.value == inputGet.value){
         inputGet2.value = null
     } else {
         inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-2, 1)
 
     };
-    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
+    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45 || inputGet3.value == inputGet2.value || inputGet3.value == inputGet.value){
         inputGet3.value = null
     } else {
         inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-3, 1)
@@ -48,11 +48,12 @@ let numGen = function(){
     });
     
     list.sort(function() {return 0.5 - Math.random()});
-    for (i = 0; i<=(7-result.length); i++){
+    a = 6 - result.length;
+
+    for (i = 0; i<a; i++){
     let num = list[i];
     result.push(num);
     }
-
 
     result.sort(function(a,b){
         return a-b;
@@ -93,18 +94,18 @@ let numGen2 = function(){
         inputGet.value = null
     } else {
         inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
-
     };
-    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
+
+    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45 || inputGet2.value == inputGet.value){
         inputGet2.value = null
     } else {
-        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-1, 1)
+        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-2, 1)
 
     };
-    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
+    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45 || inputGet3.value == inputGet2.value || inputGet3.value == inputGet.value){
         inputGet3.value = null
     } else {
-        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-1, 1)
+        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-3, 1)
     };
 
     
@@ -125,9 +126,11 @@ let numGen2 = function(){
     
 
     /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
-
+    
     list.sort(function() {return 0.5 - Math.random()});
-    for (i = 0; i<=(7-result.length); i++){
+    a = 6 - result.length;
+
+    for (i = 0; i<a ; i++){
     let num = list[i];
     result.push(num);
     }
@@ -172,18 +175,18 @@ let numGen3 = function(){
         inputGet.value = null
     } else {
         inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
-
     };
-    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
+
+    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45 || inputGet2.value == inputGet.value){
         inputGet2.value = null
     } else {
-        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-1, 1)
+        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-2, 1)
 
     };
-    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
+    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45 || inputGet3.value == inputGet2.value || inputGet3.value == inputGet.value){
         inputGet3.value = null
     } else {
-        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-1, 1)
+        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-3, 1)
     };
 
     
@@ -206,7 +209,9 @@ let numGen3 = function(){
     /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
 
     list.sort(function() {return 0.5 - Math.random()});
-    for (i = 0; i<=(7-result.length); i++){
+    a = 6 - result.length;
+
+    for (i = 0; i<a; i++){
     let num = list[i];
     result.push(num);
     }
@@ -251,18 +256,18 @@ let numGen4 = function(){
         inputGet.value = null
     } else {
         inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
-
     };
-    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
+
+    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45 || inputGet2.value == inputGet.value){
         inputGet2.value = null
     } else {
-        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-1, 1)
+        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-2, 1)
 
     };
-    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
+    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45 || inputGet3.value == inputGet2.value || inputGet3.value == inputGet.value){
         inputGet3.value = null
     } else {
-        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-1, 1)
+        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-3, 1)
     };
 
     
@@ -284,7 +289,9 @@ let numGen4 = function(){
     /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
 
     list.sort(function() {return 0.5 - Math.random()});
-    for (i = 0; i<=(7-result.length); i++){
+    a = 6 - result.length;
+
+    for (i = 0; i<a; i++){
     let num = list[i];
     result.push(num);
     }
@@ -328,18 +335,18 @@ let numGen5 = function(){
         inputGet.value = null
     } else {
         inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
-
     };
-    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
+
+    if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45 || inputGet2.value == inputGet.value){
         inputGet2.value = null
     } else {
-        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-1, 1)
+        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-2, 1)
 
     };
-    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
+    if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45 || inputGet3.value == inputGet2.value || inputGet3.value == inputGet.value){
         inputGet3.value = null
     } else {
-        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-1, 1)
+        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-3, 1)
     };
 
     
@@ -362,7 +369,9 @@ let numGen5 = function(){
     /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
 
     list.sort(function() {return 0.5 - Math.random()});
-    for (i = 0; i<=(7-result.length); i++){
+    a = 6 - result.length;
+
+    for (i = 0; i<a; i++){
     let num = list[i];
     result.push(num);
     }
