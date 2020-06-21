@@ -3,10 +3,10 @@ let numGen = function(){
 
     /* 각 입력숫자를 받아 배열에 추가하는 함수를 숫자만 받는 부분만 실행 
        function input_get(){ */
-        let inputResult = [];
-        let inputGet = document.querySelector('#input_get')
-        let inputGet2 = document.querySelector('#input_get2')
-        let inputGet3 = document.querySelector('#input_get3')
+    let inputResult = [];
+    let inputGet = document.querySelector('#input_get')
+    let inputGet2 = document.querySelector('#input_get2')
+    let inputGet3 = document.querySelector('#input_get3')
 
     let list = [];
 
@@ -17,18 +17,18 @@ let numGen = function(){
         inputGet.value = null
     } else {
         inputResult.push(Number(inputGet.value)) && list.splice(Number(inputGet.value)-1, 1)
-
     };
+
     if (isNaN(inputGet2.value) || inputGet2.value == 0 || inputGet2.value > 45){
         inputGet2.value = null
     } else {
-        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-1, 1)
+        inputResult.push(Number(inputGet2.value)) && list.splice(Number(inputGet2.value)-2, 1)
 
     };
     if (isNaN(inputGet3.value) || inputGet3.value == 0 || inputGet3.value > 45){
         inputGet3.value = null
     } else {
-        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-1, 1)
+        inputResult.push(Number(inputGet3.value)) && list.splice(Number(inputGet3.value)-3, 1)
     };
 
     
@@ -41,25 +41,18 @@ let numGen = function(){
     var fstNo4 = document.getElementById('fst_text4');
     var fstNo5 = document.getElementById('fst_text5');
 
-    var result = inputResult; 
+    let result = inputResult; 
 
     result.sort(function(a,b){
         return a-b;
     });
     
+    list.sort(function() {return 0.5 - Math.random()});
+    for (i = 0; i<=(7-result.length); i++){
+    let num = list[i];
+    result.push(num);
+    }
 
-    /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
-
-    while (result.length <= 5){
-        var index = Math.floor(Math.random() * list.length);
-        if (result.includes(index)){
-            continue;
-        }
-        var num = list[index];
-        list.splice(index, 1);
-        result.push(num);
-        }
-    
 
     result.sort(function(a,b){
         return a-b;
@@ -79,10 +72,8 @@ let numGen = function(){
         } else {
             fstNo5.innerHTML = result[i]
         }
-    }
-
-}    
-
+    }    
+}
 
 let numGen2 = function(){ 
 
@@ -135,16 +126,11 @@ let numGen2 = function(){
 
     /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
 
-    while (result.length <= 5){
-        var index = Math.floor(Math.random() * list.length);
-        if (result.includes(index)){
-            continue;
-        }
-        var num = list[index];
-        list.splice(index, 1);
-        result.push(num);
-        }
-    
+    list.sort(function() {return 0.5 - Math.random()});
+    for (i = 0; i<=(7-result.length); i++){
+    let num = list[i];
+    result.push(num);
+    }
 
     result.sort(function(a,b){
         return a-b;
@@ -219,16 +205,11 @@ let numGen3 = function(){
 
     /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
 
-    while (result.length <= 5){
-        var index = Math.floor(Math.random() * list.length);
-        if (result.includes(index)){
-            continue;
-        }
-        var num = list[index];
-        list.splice(index, 1);
-        result.push(num);
-        }
-    
+    list.sort(function() {return 0.5 - Math.random()});
+    for (i = 0; i<=(7-result.length); i++){
+    let num = list[i];
+    result.push(num);
+    }
 
     result.sort(function(a,b){
         return a-b;
@@ -300,20 +281,14 @@ let numGen4 = function(){
         return a-b;
     });
     
-
     /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
 
-    while (result.length <= 5){
-        var index = Math.floor(Math.random() * list.length);
-        if (result.includes(index)){
-            continue;
-        }
-        var num = list[index];
-        list.splice(index, 1);
-        result.push(num);
-        }
+    list.sort(function() {return 0.5 - Math.random()});
+    for (i = 0; i<=(7-result.length); i++){
+    let num = list[i];
+    result.push(num);
+    }
     
-
     result.sort(function(a,b){
         return a-b;
     });
@@ -386,16 +361,11 @@ let numGen5 = function(){
 
     /* 배열 list에서 inputResult 값 삭제(코드작성중) 후 결과값에 표시(작성필요) */
 
-    while (result.length <= 5){
-        var index = Math.floor(Math.random() * list.length);
-        if (result.includes(index)){
-            continue;
-        }
-        var num = list[index];
-        list.splice(index, 1);
-        result.push(num);
-        }
-    
+    list.sort(function() {return 0.5 - Math.random()});
+    for (i = 0; i<=(7-result.length); i++){
+    let num = list[i];
+    result.push(num);
+    }
 
     result.sort(function(a,b){
         return a-b;
