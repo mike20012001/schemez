@@ -7,7 +7,7 @@
     <script src="/scripts/moment.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/2021919c94.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -30,6 +30,7 @@
                 let dff = moment.duration(t2.diff(t1)).asDays();
                 return Math.floor(dff/7)+1;
             }
+
             $.getJSON('https://cors-anywhere.herokuapp.com/https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo='+getWeek(), function(data) {
 
                 var winningNum = {
@@ -68,9 +69,9 @@
     <div class = "store"> 판매점</div>
     <div class = "store_address"></div>
     <div class = "menu">
-        <a href="recent.html"><i class="fas fa-home"></i></a>
-        <a href="index.html"><i class="fas fa-mortar-pestle"></i></a>
-        <a href="main.html"><i class="fas fa-history"></i></a>
+        <a href="recent.html" class = "a1">최근 추첨</a>
+        <a href="main.html" class = "a2">추천 조합</a>
+        <a href="main.html" class = "a3">직접 조합</a>
     </div>
 
 </body>
