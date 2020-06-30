@@ -69,7 +69,6 @@ html{
     justify-content: space-around;
 }
 
-/* -------------------- codepen ------------------------ */
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 :root {
@@ -82,11 +81,11 @@ html{
 
 label {
 	display: inline-block;
-  	margin: 0 calc(var(--checkbox-size) * 0.3);
+    margin: 0 calc(var(--checkbox-size) * 0.3);
 	width: var(--checkbox-size);
 	height: var(--checkbox-size);
-	margin-top: 1em;
-	border: calc(var(--checkbox-size) * 0.025) solid var(--checkbox-color);
+    border: calc(var(--checkbox-size) * 0.025) solid var(--checkbox-color);
+    margin-top: 1em;
 	border-radius: 30.5%;
 	-webkit-transition: 400ms 100ms ease-out;
 	-o-transition: 400ms 100ms ease-out;
@@ -109,7 +108,7 @@ input[type="checkbox"] {
 	top: calc(var(--checkbox-size) * -0.25);
 	width: calc(var(--checkbox-size) * 0.25);
     height: calc(var(--checkbox-size) * 0.75);
-    margin-top: -1.5em;
+    margin-top: -1.3em;
 	border-right: calc(var(--checkbox-size) * 0.25) solid var(--tick-color);
 	border-bottom: calc(var(--checkbox-size) * 0.25) solid var(--tick-color);
 	-webkit-transform: rotate(45deg) scale(0);
@@ -193,7 +192,6 @@ input[type="checkbox"]:focus + label {
 	}
 }
 
-
 a {
     font-size: 18px;
     padding-bottom : 10px;
@@ -209,7 +207,7 @@ a {
     font-size: 16px;
     color: #808080;
     text-align: center;
-    margin-top: 13px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -256,9 +254,27 @@ a {
 .menu{
     display: flex;
     justify-content: space-evenly;
-    position: fixed;
-    width: 80%;
     left: 10%;
     bottom: 30px;
+    margin-top: 40px;
     max-width: 768px; 
 }
+
+.a1, .a2, .a3 {
+    text-align: center;
+    width: 93px;
+    height: 40px;
+    line-height: 2.3;
+    border-radius: 18px;
+    background: transparent; 
+    box-shadow: 0px 5px 5px #969696, 
+                0px -5px 5px #ffffff;  
+}
+
+.a1:hover, .a2:hover, .a3:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(50, 90, 116);
+    box-shadow: 5px 5px 10px #969696, 
+                5px -5px 10px #ffffff;  
+}
+
