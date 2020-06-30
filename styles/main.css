@@ -22,14 +22,19 @@ html{
                 -5px -5px 10px #ffffff;
 }    
 
-.pick1{
+.pick1, .pick2{
     margin-top: 3px;
     text-align: center;
     width: 150px;
     height: 20px;
-    border-radius:20px;
+    text-shadow: black 1px 1px 1px;
     line-height: 24px;
-    background-color: rgb(70, 107, 209);
+    font-size: 18px;
+    color: white;
+    list-style: none;
+    padding-bottom : 10px;
+    border-radius: 30px;
+    background-color: #f398a4;
     box-shadow: 2px 5px 3px #969696, 
                 2px -5px 3px #ffffff;
 }
@@ -46,9 +51,10 @@ html{
     text-align: center;
     width: 150px;
     height: 20px;
+    text-decoration: none;
     border-radius:20px;
     line-height: 24px;
-    background-color: #1E9E9E;
+    background-color: #a0b4da;
     box-shadow: 1px 5px 3px #969696, 
                 1px -5px 3px #ffffff;
 }
@@ -61,13 +67,7 @@ html{
 
 
 a {
-    font-size: 18px;
-    padding-bottom : 10px;
-    color: white;
-    text-shadow: black 1px 1px 1px;
     text-decoration: none;
-    list-style: none;
-    border-radius: 30px;
 }
 
 .birthfav{
@@ -130,7 +130,6 @@ a {
                  -14px -14px 28px #ffffff;
 }
 
-
 .button:hover{
     background: lightgray;
     background-color:transparent;
@@ -146,16 +145,17 @@ a {
     background-color:transparent;
     color: red;
     background: linear-gradient(145deg, #dad6d6, #ffffff);
-    box-shadow:  14px 14px 28px #cecaca, 
-                 -14px -14px 28px #ffffff;
+    box-shadow:  20px 20px 14px #cecaca, 
+                 -20px -20px 14px #ffffff;
 }
+
 
 .picknumber{
     width: 35px;
     height: 35px;
     border-radius: 10px;
     color: red;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
     line-height: 35px;
     background-color:transparent;
@@ -227,9 +227,28 @@ a {
 .menu{
     display: flex;
     justify-content: space-evenly;
-    position: fixed;
-    width: 80%;
     left: 10%;
     bottom: 30px;
+    margin-top: 40px;
     max-width: 768px; 
 }
+
+.a1, .a2, .a3 {
+    text-align: center;
+    color: rgb(52, 109, 175);
+    width: 93px;
+    height: 40px;
+    line-height: 2.3;
+    border-radius: 18px;
+    background: transparent; 
+    box-shadow: 0px 5px 5px #969696, 
+                0px -5px 5px #ffffff;  
+}
+
+.a1:hover, .a2:hover, .a3:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(50, 90, 116);
+    box-shadow: 5px 5px 10px #969696, 
+                5px -5px 10px #ffffff;  
+}
+
