@@ -30,7 +30,7 @@
                 let dff = moment.duration(t2.diff(t1)).asDays();
                 return Math.floor(dff/7)+1;
             }
-            $.getJSON('https://cors-anywhere.herokuapp.com/https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo='+getWeek(), function(data) {
+            $.getJSON('https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo='+getWeek(), function(data) {
 
                 var winningNum = {
                     drwt1: data.drwtNo1,
