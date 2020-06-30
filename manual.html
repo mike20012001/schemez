@@ -4,66 +4,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>로또번호 추천</title>
     <link rel="stylesheet" href="/styles/manual.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/scripts/checkbox.js"></script>
     <script src="https://kit.fontawesome.com/2021919c94.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
 </head>
     <div class="picks">
-        <a class = "pick1" href="main.html"> 반자동 조합 </a>
+        <a class = "pick1" href="index.html"> 반자동 조합 </a>
         <a class = "pick2" href="manual.html"> 확률 조합 </a>
     </div>
     <div class = "num_select">선택번호</div>
         <div class="checkboxes">
-            <form id="fm" name="fm">
-                <input type="checkbox" id="cb1" value="1"> <label for="cb1">1<div class="tick"></div></label>
-                <input type="checkbox" id="cb2" value="2"> <label for="cb2">2<div class="tick"></div></label>
-                <input type="checkbox" id="cb3" value="3"> <label for="cb3">3<div class="tick"></div></label>
-                <input type="checkbox" id="cb4" value="4"> <label for="cb4">4<div class="tick"></div></label>
-                <input type="checkbox" id="cb5" value="5"> <label for="cb5">5<div class="tick"></div></label>
-                <input type="checkbox" id="cb6" value="6"> <label for="cb6">6<div class="tick"></div></label>
-                <input type="checkbox" id="cb7" value="7"> <label for="cb7">7<div class="tick"></div></label>
-                <input type="checkbox" id="cb8" value="8"> <label for="cb8">8<div class="tick"></div></label>
-                <input type="checkbox" id="cb9" value="9"> <label for="cb9">9<div class="tick"></div></label>
-                <input type="checkbox" id="cb10" value="10"> <label for="cb10">10<div class="tick"></div></label>
-                <input type="checkbox" id="cb11" value="11"> <label for="cb11">11<div class="tick"></div></label>
-                <input type="checkbox" id="cb12" value="12"> <label for="cb12">12<div class="tick"></div></label>
-                <input type="checkbox" id="cb13" value="13"> <label for="cb13">13<div class="tick"></div></label>
-                <input type="checkbox" id="cb14" value="14"> <label for="cb14">14<div class="tick"></div></label>
-                <input type="checkbox" id="cb15" value="15"> <label for="cb15">15<div class="tick"></div></label>
-                <input type="checkbox" id="cb16" value="16"> <label for="cb16">16<div class="tick"></div></label>
-                <input type="checkbox" id="cb17" value="17"> <label for="cb17">17<div class="tick"></div></label>
-                <input type="checkbox" id="cb18" value="18"> <label for="cb18">18<div class="tick"></div></label>
-                <input type="checkbox" id="cb19" value="19"> <label for="cb19">19<div class="tick"></div></label>
-                <input type="checkbox" id="cb20" value="20"> <label for="cb20">20<div class="tick"></div></label>
-                <input type="checkbox" id="cb21" value="21"> <label for="cb21">21<div class="tick"></div></label>
-                <input type="checkbox" id="cb22" value="22"> <label for="cb22">22<div class="tick"></div></label>
-                <input type="checkbox" id="cb23" value="23"> <label for="cb23">23<div class="tick"></div></label>
-                <input type="checkbox" id="cb24" value="24"> <label for="cb24">24<div class="tick"></div></label>
-                <input type="checkbox" id="cb25" value="25"> <label for="cb25">25<div class="tick"></div></label>
-                <input type="checkbox" id="cb26" value="26"> <label for="cb26">26<div class="tick"></div></label>
-                <input type="checkbox" id="cb27" value="27"> <label for="cb27">27<div class="tick"></div></label>
-                <input type="checkbox" id="cb28" value="28"> <label for="cb28">28<div class="tick"></div></label>
-                <input type="checkbox" id="cb29" value="29"> <label for="cb29">29<div class="tick"></div></label>
-                <input type="checkbox" id="cb30" value="30"> <label for="cb30">30<div class="tick"></div></label>
-                <input type="checkbox" id="cb31" value="31"> <label for="cb31">31<div class="tick"></div></label>
-                <input type="checkbox" id="cb32" value="32"> <label for="cb32">32<div class="tick"></div></label>
-                <input type="checkbox" id="cb33" value="33"> <label for="cb33">33<div class="tick"></div></label>
-                <input type="checkbox" id="cb34" value="34"> <label for="cb34">34<div class="tick"></div></label>
-                <input type="checkbox" id="cb35" value="35"> <label for="cb35">35<div class="tick"></div></label>
-                <input type="checkbox" id="cb36" value="36"> <label for="cb36">36<div class="tick"></div></label>
-                <input type="checkbox" id="cb37" value="37"> <label for="cb37">37<div class="tick"></div></label>
-                <input type="checkbox" id="cb38" value="38"> <label for="cb38">38<div class="tick"></div></label>
-                <input type="checkbox" id="cb39" value="39"> <label for="cb39">39<div class="tick"></div></label>
-                <input type="checkbox" id="cb40" value="40"> <label for="cb40">40<div class="tick"></div></label>
-                <input type="checkbox" id="cb41" value="41"> <label for="cb41">41<div class="tick"></div></label>
-                <input type="checkbox" id="cb42" value="42"> <label for="cb42">42<div class="tick"></div></label>
-                <input type="checkbox" id="cb43" value="43"> <label for="cb43">43<div class="tick"></div></label>
-                <input type="checkbox" id="cb44" value="44"> <label for="cb44">44<div class="tick"></div></label>
-                <input type="checkbox" id="cb45" value="45"> <label for="cb45">45<div class="tick"></div></label>
+            <form id="fm" name="fm"></form>
+                <input type="checkbox" name = "user_check" id="cb1" value="1"> <label for="cb1">1<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb2" value="2"> <label for="cb2">2<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb3" value="3"> <label for="cb3">3<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb4" value="4"> <label for="cb4">4<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb5" value="5"> <label for="cb5">5<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb6" value="6"> <label for="cb6">6<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb7" value="7"> <label for="cb7">7<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb8" value="8"> <label for="cb8">8<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb9" value="9"> <label for="cb9">9<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb10" value="10"> <label for="cb10">10<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb11" value="11"> <label for="cb11">11<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb12" value="12"> <label for="cb12">12<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb13" value="13"> <label for="cb13">13<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb14" value="14"> <label for="cb14">14<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb15" value="15"> <label for="cb15">15<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb16" value="16"> <label for="cb16">16<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb17" value="17"> <label for="cb17">17<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb18" value="18"> <label for="cb18">18<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb19" value="19"> <label for="cb19">19<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb20" value="20"> <label for="cb20">20<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb21" value="21"> <label for="cb21">21<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb22" value="22"> <label for="cb22">22<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb23" value="23"> <label for="cb23">23<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb24" value="24"> <label for="cb24">24<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb25" value="25"> <label for="cb25">25<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb26" value="26"> <label for="cb26">26<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb27" value="27"> <label for="cb27">27<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb28" value="28"> <label for="cb28">28<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb29" value="29"> <label for="cb29">29<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb30" value="30"> <label for="cb30">30<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb31" value="31"> <label for="cb31">31<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb32" value="32"> <label for="cb32">32<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb33" value="33"> <label for="cb33">33<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb34" value="34"> <label for="cb34">34<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb35" value="35"> <label for="cb35">35<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb36" value="36"> <label for="cb36">36<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb37" value="37"> <label for="cb37">37<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb38" value="38"> <label for="cb38">38<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb39" value="39"> <label for="cb39">39<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb40" value="40"> <label for="cb40">40<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb41" value="41"> <label for="cb41">41<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb42" value="42"> <label for="cb42">42<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb43" value="43"> <label for="cb43">43<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb44" value="44"> <label for="cb44">44<div class="tick"></div></label>
+                <input type="checkbox" name = "user_check" id="cb45" value="45"> <label for="cb45">45<div class="tick"></div></label>
             </form>
-        </div>
+        <div id="response"><button id="submit" onclick="abcd()">submit</button></div> 
+
+    </div>
         <div class="recmdtable">추천번호</div>
-        <div class="no_table">
+        <div class="no_table" id = "recommends">
             <div class="fst_no">1</div>
             <div class="snd_no">2</div>
             <div class="trd_no">3</div>
@@ -71,9 +75,9 @@
             <div class="fft_no">5</div>
         </div>
         <div class = "menu">
-            <a href="recent.html"><i class="fas fa-home"></i></a>
-            <a href="main.html"><i class="fas fa-mortar-pestle"></i></a>
-            <a href="main.html"><i class="fas fa-history"></i></a>
+            <a href="recent.html" class = "a1">최근 추첨</a>
+            <a href="index.html" class = "a2">추천 조합</a>
+            <a href="index.html" class = "a3">직접 조합</a>
         </div>
     
     
